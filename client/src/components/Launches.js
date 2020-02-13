@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import gql from 'graphql-tag';
 import { Query } from 'react-apollo';
 
+import LaunchItem from './LaunchItem';
+
 const LAUNCHES_QUERY = gql`
     query LauchesQuery {
         launches {
