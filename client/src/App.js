@@ -1,6 +1,7 @@
 import React from 'react';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
+import Launches from './components/Launches';
 import './App.css';
 
 const client = new ApolloClient({
@@ -12,6 +13,7 @@ function App() {
     <ApolloProvider client={client}>
     <div className="container">
       <h1>SpaceX</h1>
+      <Launches />
     </div>
     </ApolloProvider>
   );
